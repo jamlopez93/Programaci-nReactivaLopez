@@ -1,0 +1,12 @@
+
+
+<mat-card *ngFor="let company of usersByCompany">
+  <mat-card-title>{{ company[0] }}</mat-card-title>
+  <mat-card-content>
+  <ul>
+    <li *ngFor="let user of company[1]">
+      {{ user.name }} - {{ user.email }}
+    </li>
+  </ul>
+</mat-card-content>
+</mat-card>
